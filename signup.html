@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Page</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body style="display: flex; justify-content: center; align-items: center;">
+    <form id="signupForm" action="php/signup.php" method="post" enctype="multipart/form-data">
+        <div class="form-field">
+            <label for="firstname">Firstname</label>
+            <input type="text" id="firstname" name="firstname" required>
+        </div>
+        <div class="form-field">
+            <label for="lastname">Lastname</label>
+            <input type="text" id="lastname" name="lastname" required>
+        </div>
+        <div class="form-field">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <div class="form-field">
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" name="dob" required>
+        </div>
+        <div class="form-field">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required title="Ten digit phone number">
+        </div>
+        <div class="form-field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-actions">
+            <button type="reset" class="reset-button">Reset</button>
+            <button type="submit" class="submit-button">Submit</button>
+        </div>
+    </form>
+</body>
+</html>
